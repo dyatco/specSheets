@@ -10,7 +10,6 @@
 	background-color: #E6EEEF;
 }
 
-
 .container{
 	display: grid;
 	grid-template-columns: .7fr 1fr 1fr 1fr;
@@ -263,8 +262,6 @@ li{
 	.sidebarContainer{
 		display: flex;
 	}
-	#insideSidebar{
-	}
 	.homeSideText, .projectsSideText{
 		font-size: 16px;
 		margin-bottom: 0px;
@@ -324,9 +321,15 @@ li{
 
 
 /*CAFE PAGE*/
+.cafeContainer{
+	background-color: #E6EEEF;
+}
 .projectHead{
 	font-size: 38px;
 	font-weight: 500;
+}
+#tableContainer{
+	width: 75%;
 }
 #tableHead th{
 	background-color: #324B4C;
@@ -338,27 +341,82 @@ li{
 #tableHead th:last-child{
 	border-top-right-radius: 15px;
 }
-
+#tableHeadMobile{
+	display: none;
+}
 #tableBody th,td{
 	background: #fff;
 }
 #tableBody img{
 	background: #fff;
 }
+.cafeSidebar{
+	width: auto;
+	border: 10px solid #03989E;
+	background: #03989E;
+	border-radius: 15px;
+	padding-top: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#insideCafeSidebar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	border: 10px;
+	border-radius: 10px;
+	min-height: 100%;
+	background-color: #03989E;
+	height: 100%;
+}
+.homeCafeSideText{
+	background-color: #03989E;
+	margin-left: 16px;
 
-.sBarContainer{
-		min-height: 100vh;
-	}
+} 
+.projectsCafeSideText{
+	background-color: #03989E;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
 @media only screen and (max-width: 576px){
-	.sBarContainer{
-		min-height: 0vh;
-	}
-	#sidebar{
-		background-color: #03989E;
-	}
+
 	/*Adjustment for mobile resposive table*/
-	.table thead{
+	.table, .projectHead{
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	.thead{
+		display: flex;
+		justify-content: center;
+	}
+	#tableHead{
 		display: none;
+	}
+	#tableHeadMobile{
+		display: flex;
+		text-align: center;
+		width: 100%;
+		background-color: #E6EEEF;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	#tableHeadMobile th{
+		background-color: #324B4C;
+		color: white;
+	}
+	#tableHeadMobile th:first-child{
+		border-top-left-radius: 15px;
+	}
+	#tableHeadMobile th:last-child{
+		border-top-right-radius: 15px;
 	}
 	.table, .table tbody, .table td{
 		display: block;
