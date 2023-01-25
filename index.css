@@ -393,6 +393,9 @@ li{
 		padding-right: 16px;
 		padding-left: 16px;
 	}
+	.projectHead{
+		font-size: 25px;
+	}
 	.thead{
 		display: flex;
 		justify-content: center;
